@@ -57,7 +57,7 @@ MyPauseLayer::Params MyPauseLayer::getParams(GJGameLevel* level, PlayLayer* play
     int difficulty;
 
     if (level->m_autoLevel) {
-        difficulty = 0;
+        difficulty = -1;
     } else if (level->m_demon > 0) {
         difficulty = level->demonIconForDifficulty(
             static_cast<DemonDifficultyType>(level->m_demonDifficulty)
